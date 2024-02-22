@@ -1,7 +1,7 @@
-### AirLux
+# AirLux
 
 ## Membres du groupe :
-# - Kevin Robin
-# - Matias Caturla
-# - Martin Vignolles
-# - Etienne Lopez
+### - Kevin Robin
+### - Matias Caturla
+### - Martin Vignolles
+### - Etienne Lopez
