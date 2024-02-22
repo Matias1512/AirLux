@@ -1,18 +1,11 @@
-from flask import Flask, jsonify, request
+from flask import Flask, request, jsonify
 
 app = Flask(__name__)
-app.config['DEBUG'] = True
-
-received_numbers = []
 
 @app.route('/receive', methods=['POST'])
 def receive_number():
     data = request.get_json()
     received_number = data.get("number")
-
-    received_numbers.append(received_number)
-
-    print(received_numbers)
     print(f"Nombre reçu : {received_number}")
     return jsonify({"message": "Nombre reçu avec succès"}), 200
 

@@ -2,7 +2,7 @@ import requests
 import random
 import time
 
-SERVER_URL = "http://server:5000"
+SERVER_URL = "http://server:5000"  # Remplacez "server" par le nom du conteneur du serveur
 
 def send_random_number():
     random_number = random.randint(1, 100)

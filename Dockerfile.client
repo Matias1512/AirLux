@@ -4,8 +4,7 @@ WORKDIR /app
 
 COPY requirements.txt .
 
-RUN pip install Flask
-RUN pip install requests
+RUN pip install --no-cache-dir -r requirements.txt
 
 COPY client.py .
 
