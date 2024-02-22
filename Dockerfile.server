@@ -1,0 +1,12 @@
+FROM python:3.8-slim
+
+WORKDIR /app
+
+COPY requirements.txt .
+
+RUN pip install Flask
+RUN pip install requests
+
+COPY server.py .
+
+CMD ["python", "server.py"]
